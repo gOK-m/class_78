@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>arrays</title>
+</head>
+
+<body>
+    <p>declaring an array
+        <h3 id="array_fruit_declaration"></h3>
+    </p>
+    <hr>
+    <p>to fetch the third element of the array
+        <h3 id="third_name"></h3>
+    </p>
+    <hr>
+    <p>total number of elements
+        <h3 id="total_elements"></h3>
+    </p>
+    <hr>
+    <p>new fruit
+        <h3 id="fruit_new"></h3>
+    </p>
+    <hr>
+    <p>looping the array
+        <h3 id="loop_h3"></h3>
+    </p>
+    <script>
+        var fruits = ["apple", "orange", "strawberry", "lemon"];
+        console.log(fruits);
+        document.getElementById("array_fruit_declaration").innerHTML = fruits;
+        var third_element = fruits[2];
+        console.log(third_element);
+        document.getElementById("third_name").innerHTML = third_element;
+        var total_items = fruits.length;
+        console.log(total_items);
+        document.getElementById("total_elements").innerHTML = total_items;
+        fruits.push("kiwi");
+        console.log(fruits);
+        document.getElementById("fruit_new").innerHTML = fruits;
+        var array_val = "";
+        for (i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+            array_val = array_val + fruits[i] + "<br>";
+        }
+        document.getElementById("loop_h3").innerHTML = array_val;
+    </script>
+</body>
+
+</html>
